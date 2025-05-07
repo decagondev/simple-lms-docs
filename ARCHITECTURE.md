@@ -108,7 +108,6 @@ graph TD
 ```
 
 ### Database Schema
-
 ```mermaid
 erDiagram
     USER {
@@ -176,7 +175,7 @@ erDiagram
         date createdAt
         date updatedAt
     }
-
+    
     USER ||--o{ COHORT : "assigned to"
     COHORT ||--o{ COURSE : "includes"
     COURSE ||--o{ CLASS : "contains"
@@ -184,7 +183,6 @@ erDiagram
     CLASS ||--o{ RESOURCE : "uses"
     CLASS ||--o{ CALENDAR_EVENT : "scheduled as"
 ```
-
 ## Technology Stack
 
 ### Frontend

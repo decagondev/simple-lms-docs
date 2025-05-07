@@ -119,7 +119,6 @@ erDiagram
         date createdAt
         date updatedAt
     }
-    
     COURSE {
         string id PK
         string title
@@ -129,7 +128,6 @@ erDiagram
         date createdAt
         date updatedAt
     }
-    
     RESOURCE {
         string id PK
         string title
@@ -139,7 +137,6 @@ erDiagram
         date createdAt
         date updatedAt
     }
-    
     CLASS {
         string id PK
         string title
@@ -150,7 +147,6 @@ erDiagram
         date createdAt
         date updatedAt
     }
-    
     COHORT {
         string id PK
         string name
@@ -162,7 +158,6 @@ erDiagram
         date createdAt
         date updatedAt
     }
-    
     CALENDAR_EVENT {
         string id PK
         string title
@@ -175,10 +170,9 @@ erDiagram
         date createdAt
         date updatedAt
     }
-    
     USER ||--o{ COHORT : "assigned to"
     COHORT ||--o{ COURSE : "includes"
-    COURSE ||--o{ CLASS : "contains"
+    COURSE ||--o{ CLASS : "contains" 
     COURSE ||--o{ RESOURCE : "has"
     CLASS ||--o{ RESOURCE : "uses"
     CLASS ||--o{ CALENDAR_EVENT : "scheduled as"

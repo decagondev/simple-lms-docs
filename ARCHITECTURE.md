@@ -137,7 +137,7 @@ erDiagram
         date createdAt
         date updatedAt
     }
-    CLASS {
+    COURSE_CLASS {
         string id PK
         string title
         string description
@@ -172,10 +172,10 @@ erDiagram
     }
     USER ||--o{ COHORT : "assigned to"
     COHORT ||--o{ COURSE : "includes"
-    COURSE ||--o{ CLASS : "contains" 
+    COURSE ||--o{ COURSE_CLASS : "contains" 
     COURSE ||--o{ RESOURCE : "has"
-    CLASS ||--o{ RESOURCE : "uses"
-    CLASS ||--o{ CALENDAR_EVENT : "scheduled as"
+    COURSE_CLASS ||--o{ RESOURCE : "uses"
+    COURSE_CLASS ||--o{ CALENDAR_EVENT : "scheduled as"
 ```
 ## Technology Stack
 
